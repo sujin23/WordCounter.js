@@ -1,0 +1,20 @@
+객체는 순서가 없기 때문에 정렬하기 적합한 컨테이너가 아님
+따라서 정렬을 위해서 객체의 내용을 배열화 시켜야 함
+(배열은 순서가 있음)
+
+정렬 예시
+t1 = ['zeus', 'oner', 'faker', 'gumayusi', 'keria']
+t1
+t1.sort()
+t1 (이때 정렬 된 상태를 유지한다)
+
+* 거꾸로 정렬하기
+sort 메소드에 첫 번째 인자로 함수를 넣으면 JS가 비교하며 거꾸로 정렬해준다
+t1.sort(function(a, b){
+	console.log(a, b)
+})
+
+* 글자 길이로 정렬하기
+t1.sort(function(a, b){
+	return a.length - b.length;
+})
