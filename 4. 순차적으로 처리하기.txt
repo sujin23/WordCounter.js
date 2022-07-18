@@ -1,0 +1,9 @@
+splitedText를 통해 쪼갠 정보를 반복문을 통해 순회
+
+splitedText는 배열, 배열에는 항상 ___이 따라온다.
+___ = 반복문!
+즉, 반복문을 통해서 배열 안에 있는 정보를 순회하면서 작업을 처리
+
+for(var i = 0; i < splitedText.length; i++){
+	console.log(splitedText[i])
+}
