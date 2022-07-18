@@ -1,0 +1,7 @@
+콘솔창으로 출력하는 것 대신 경고창으로 출력
+
+var str = '';
+for(var i = 0; i < countedWordArr.length; i++){
+    str = str + countedWordArr[i][0] + " : " + countedWordArr[i][1])+"\n"
+}
+alert(str)
