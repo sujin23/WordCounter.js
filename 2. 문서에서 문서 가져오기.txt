@@ -1,0 +1,16 @@
+# 현재 웹페이지의 모든 텍스트 가져오기
+
+[innerText, outerText API]
+위 API들은 값을 읽을 때는 HTML 코드를 제외한 문자열을 리턴하고, 값을 변경할 때는 HTML의 코드를 그대로 출력한다.
+
+대상 문서(https://en.wikipedia.org/wiki/Faker_(gamer)) 에서 문서의 모든 Element들을 담고 있는(=대표성이 있는) 것을 찾아내야 함 --> HTML or body
+
+[document.getElementsByTagName]
+문서에서 tag name을 이용해 Element를 가져오는 API
+
+document.getElementsByTagName('body'): tag name이 body인 Element를 가져옴 --> 결과가 배열로 나옴
+document.getElementsByTagName('body')[0]: 그 배열의 첫 번째 Element를 가져옴 (body tag의 식별자를 얻음)
+document.getElementsByTagName('body')[0].innerText: body tag의 모든 Text를 가져옴
+--> 결과적으로 문서 안의 모든 문자들을 가져옴
+
+var entireText = document.getElementsByTagName('body')[0].innerText: 가져온 정보를 entireText 변수에 넣음
