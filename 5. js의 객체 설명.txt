@@ -1,0 +1,26 @@
+* 객체 이론
+
+[객체 사용법]
+
+객체 만들기
+obj = {}
+
+객체에 값을 넣기
+obj.name = 'sujin';
+obj.nickname = 'rothea';
+obj.age = '22';
+
+객체 값 가져오기 1
+obj.name
+obj.nickname
+obj.age
+
+객체 값 가져오기 2
+obj['name']
+obj['nickname']
+obj['age']
+
+2번 방법이 변수 사용과 관련해서 더 편리함(index명을 동적으로 처리할 수 있다는 장점)
+예시
+firstname = 'name'
+obj[firstname]
