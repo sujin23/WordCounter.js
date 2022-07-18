@@ -1,0 +1,18 @@
+정렬을 위해 countedWord 라는 객체를 배열로 만들어주는 작업이 필요
+var countedWordArr = new Array();
+
+[countedWord 안에 있는 여러(=각각의) 프로퍼티의 수 만큼 중괄호 사이에 있는 코드 실행, 실행될때마다 in 앞에 있는 name의 값을 프로퍼티의 이름으로 설정]
+for(var name in countWord) {
+	console.log(name, countedWord[name])
+	// 객체의 프로퍼티 name으로 접근하고 있기 때문에 숫자가 출력됨
+}
+
+[배열에 값 push하기]
+for(var name in countedWord) {
+	countedWordArr.push([name, countedWord[name]])
+}
+
+[sort를 이용해 정렬하기 (이때 기준이 되는 함수 필요)]
+countedWordArr.sort(funtion(a, b){
+	return a[1] - b[1];
+})

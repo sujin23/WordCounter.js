@@ -12,3 +12,10 @@ for(var i = 0; i < splitedText.length; i++){
 	}
 }
 
+for(var name in countedWord) {
+	countedWordArr.push([name, countedWord[name]])
+}
+
+countedWordArr.sort(function(a, b){
+	return a[1] - b[1];
+})
