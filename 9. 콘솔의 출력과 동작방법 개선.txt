@@ -1,0 +1,17 @@
+배열 안에 들어있는 값을 호출하기 위해 반복문 사용
+
+for(var i = 0; i < countedWordArr.length; i++){
+    console.log(countedWordArr[i][0], countedWordArr[i][1])
+}
+
+[대소문자 구분 없애기]
+// 6. 등장 빈도 계산하는 부분 코드에 toLowerCase 추가
+var countedWord = {};
+for(var i=0; i<splitedText.length; i++){
+    var word = splitedText[i].toLowerCase();
+    if(countedWord[word] == undefined){
+         countedWord[word] = 1;
+    } else {
+         countedWord[word] = countedWord[word] + 1;
+    }
+}
